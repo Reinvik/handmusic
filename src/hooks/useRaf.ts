@@ -1,0 +1,1 @@
+import { useEffect } from 'react';export default function useRaf(cb:(t:number)=>void, active:boolean){useEffect(()=>{if(!active) return; let r:number; const loop=(t:number)=>{cb(t); r=requestAnimationFrame(loop)}; r=requestAnimationFrame(loop); return ()=> cancelAnimationFrame(r)},[cb,active])}

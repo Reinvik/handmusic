@@ -1,0 +1,1 @@
+import HandMusic from './components/HandMusic';export default function App(){return(<div className='min-h-screen p-4 md:p-6'><div className='max-w-6xl mx-auto grid md:grid-cols-[1fr_320px] gap-4'><HandMusic/></div></div>)}
